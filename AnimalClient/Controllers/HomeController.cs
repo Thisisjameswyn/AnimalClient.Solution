@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using animalclient.Models;
+using AnimalClient.Models;
 
 namespace AnimalClient.Controllers
 {
@@ -20,7 +20,7 @@ namespace AnimalClient.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "Animals");
         }
 
         public IActionResult Privacy()
